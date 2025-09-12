@@ -1,53 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</script>
 </head>
 <body>
-<header>
-  <div class="logo">
-    <img src="https://tinyurl.com/4hdk6hae" alt="logo" />
-    <!-- <a href="">RANA</a> im gonna put my pic here -->
-  </div>
-<div class="parent-link">
-     <ul>
-          <li><a class="social-link" href="#">Home</a></li>
+  <nav class="main-nav">
+    <div class="container">
+      <div class="logo-box">
+        <img src="images/ME AS DRAW.jpeg" alt="logo" class="logo-img" />
+        
+      </div>
+
+      <div class="parent-link"> 
+        <ul class="navigation">
+          <div class='highlight'></div>
+          <li class="active"><a class="social-link" href="#home">Home</a></li>
           <li><a class="social-link" href="#about">About</a></li>
-          <li><a class="social-link" href="#skilll">Skilll</a></li>
-          <li><a class="social-link" href="#project">Project</a></li>
+          <li><a class="social-link" href="#skills">Skills</a></li>
+          <li><a class="social-link" href="#project">Projects</a></li>
           <li><a class="social-link" href="#contact">Contact</a></li>
-        </ul></div>
-</section>
-<section id="about" class="about">
-      <div class="container">
-        <div class="content"> 
-           <div class="name-role">
-        <h2> Full stack Developer</h2>
+        </ul>
+      </div>
+
+      <div class="social-icons top-socials">
+        <a href="https://github.com/ranaahmd" target="_blank">
+          <img src="images/github.png" alt="GitHub Logo" class="icon-img" />
+        </a>
+        <a href="https://www.linkedin.com/in/rana-ahmed-864bb41b7" target="_blank">
+          <img src="images/linkedin.png" alt="LinkedIn Logo" class="icon-img" />
+        </a>
+      </div>
     </div>
-    <div class="header-container">
-        <div class="hdr-containner-inner">
-        <p>I am a Computer Science graduate from the class of 2024 with a strong passion for full stack development. 
-            <br>I enjoy building complete web solutions that are both functional and user-friendly.</br>
-             <br>In addition to my technical background,</br>
-             <br> I am multilingual—I speak Arabic (native), English, and Italian fluently, and have a good understanding of Spanish.</br> 
-            <b>I’m deeply interested in learning new languages and exploring different cultures, which enhances my communication skills and ability to work in diverse environments.</b>
-            <br> Technically, I’m proficient in several programming languages and technologies, including JavaScript, HTML, CSS, SQL, Python, and NoSQL.</br>
-            <br> I’m always eager to learn, grow, and take on new challenges in the tech industry.</br></p>
-           <a href="#" class="btn">Contact Me</a>
-        </div>
-        </div>
-           
-            <!-- inspierd from tiketok -->
-              <div class="icon">
-                  <a href="https://github.com/ranaahmd" target='_blank' class='sm-icon' ><ion-icon name="logo-github"></ion-icon>
-                  <a href="https://github.com/ranaahmd" target='_blank'class='sm-icon'><ion-icon name="logo-linkedin"></ion-icon>
+  </nav>
 
-              </div>
-                </div>
-              </div>
+  <section id="home" class="section">
+    <div class="container">
+      <p> </p>
+    </div>
+  </section>
 
+        <div class="header-container">
+          <div class="hdr-containner-inner">
+            <div class="name-role">
+              <div class="role"></div>
+              <section id="about" class="about">
+    <div class="container">
+      <div class="content">
+        <div class="name-role">
+          <h2>Full Stack Developer</h2>
+          <h5>RANA AHMED ALHURTUMI</h5>
+          
+            <!-- <p>
+     Computer Science graduate from the class of 2024 with a strong passion for full stack development. 
+I enjoy building complete web solutions that are both functional and user-friendly.<br><br>
+            s In addition to my technical background, I am multilingual—I speak Arabic (native), English, and Italian fluently, and have a good understanding of Spanish.<br><br>
+              I’m deeply interested in learning new languages and exploring different cultures, which enhances my communication skills and ability to work in diverse environments.<br><br>
+              Technically, I’m proficient in several programming languages and technologies, including JavaScript, HTML, CSS, SQL, Python, and NoSQL.<br><br>
+              I’m always eager to learn, grow, and take on new challenges in the tech industry.
+            </p> 
+        </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+  <div class="skills-container">
+    <h2 class="skills-title">My Skills</h2>
+
+<div class="skills-scroll">
+  <img src="images/html.png" alt="HTML" />
+  <img src="images/css.png" alt="CSS" />
+  <img src="images/js.png" alt="JavaScript" />
+  <img src="images/figma.png" alt="FIGMA" />
+    <img src="images/sql-server.png" alt="SQL" />
+
+</div>
+
+<!-- PROJECT SECTION in both css,html COPIED FROM  Tiketok:eyyekss.it_x  -->
+  <section id="projects">
+  <div class="projects-container">
+    <h2 class="projects-title">My Projects</h2>
+
+    <div class="projects-scroll">
     
+      <div class="project-card">
+        <img src="images/AFAQ.jpeg" alt="Project 1" />
+        <h3>AFAQ UQU</h3>   
+        <p>AN application that helps students obtain volunteer and training opportunities</p>
+        <div class="PR">
+          <span class="tag A">Flutter</span>
+          <span class="tag G">DART</span>
+          <span class="tag C">NOSQL</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/google.png" alt="Project 2" />
+        <h3>Cancer Cell Segmentation Using opencv</h3>
+        <p>Write code that segments canser cells in medical images using Python and Open CV
+Method (Edge Detection)</p>
+        <div class="PR">
+          <span class="tag G">Python</span>
+          <span class="tag C">GoogleCoolab</span>
+          
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/proj3.webp" alt="Project3" />
+        <h3>LEARN HOW TO BR PROGRRAMER</h3>
+        <p>WEBSITE TO LEARN PROGRRAMING languages</p>
+        <div class="PR">
+          <span class="tag G">HTML</span>
+          <span class="tag C">CSS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>
