@@ -335,7 +335,7 @@ transition: 0.3s;
   font-weight: bold;
   color: white;
 }
-
+/* project css copied from the same persone */
 .tag.A {
   background-color: #6ca5ef;
 }
@@ -351,41 +351,43 @@ transition: 0.3s;
 *{
   box-sizing:border-box;
 }
-input[type=text],select,textarea{
+input[type=text],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
-  resize:vertical;
-  justify-content: flex-start;
+  resize: vertical;
 
-
-} input[type=submit]{
+} input[type=submit] {
   background-color: #2e7cc6;
   color: wheat;
   border: none;
   cursor: pointer;
+  padding: 12px;
+  width: 100%;
 
 }input[type=submit]:hover{
   background-color: #68aceb;
 }
-.Contact-continer{
+.Contact-container {
   border-radius: 5px;
-  padding:10px
-}.column{
-  float:left;
-  width: 50%;
-  margin-top: 6px;
-  padding:20px;
-  justify-content: flex-end;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}.column {
+  flex: 1;
+  min-width: 300px;
 }.image-column {
   text-align: right;
-}.row::after{
-  content: "";
-  display: table;
-  clear:both;
-  justify-content: flex-end;
+}.row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap; 
   /* media and project section copied from Tiketok */
 
 }@media screen and (max-width: 600px){
