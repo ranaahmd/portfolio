@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+
   <script defer src="script.js"></script>
-</script>
+
 </head>
 <body>
   <nav class="main-nav">
     <div class="container">
       <div class="logo-box">
-        <img src="images/ME AS DRAW.jpeg" alt="logo" class="logo-img" />
-        
+        <img src="images/me.jpg" alt="logo" class="logo-img" />
+      
       </div>
 
       <div class="parent-link"> 
@@ -27,7 +28,7 @@
         </ul>
       </div>
 
-      <div class="social-icons top-socials">
+      <div class="social-icons ">
         <a href="https://github.com/ranaahmd" target="_blank">
           <img src="images/github.png" alt="GitHub Logo" class="icon-img" />
         </a>
@@ -40,30 +41,26 @@
 
   <section id="home" class="section">
     <div class="container">
-      <p> </p>
-    </div>
-  </section>
-
         <div class="header-container">
           <div class="hdr-containner-inner">
             <div class="name-role">
               <div class="role"></div>
-              <section id="about" class="about">
-    <div class="container">
-      <div class="content">
-        <div class="name-role">
-          <h2>Full Stack Developer</h2>
-          <h5>RANA AHMED ALHURTUMI</h5>
-          
-            <!-- <p>
-     Computer Science graduate from the class of 2024 with a strong passion for full stack development. 
-I enjoy building complete web solutions that are both functional and user-friendly.<br><br>
-            s In addition to my technical background, I am multilingual—I speak Arabic (native), English, and Italian fluently, and have a good understanding of Spanish.<br><br>
-              I’m deeply interested in learning new languages and exploring different cultures, which enhances my communication skills and ability to work in diverse environments.<br><br>
-              Technically, I’m proficient in several programming languages and technologies, including JavaScript, HTML, CSS, SQL, Python, and NoSQL.<br><br>
-              I’m always eager to learn, grow, and take on new challenges in the tech industry.
-            </p> 
-        </div> -->
+              <img src="images/me.jpg" class="MEASDRAW">    
+             <h2 >Tech Enthusiast in Full Stack & Data</h2>
+          <h5>RANA AHMED ALHURTUMI</h5><div class="ME">
+            <div class ='butt'>
+       <a class="btncv" href="not now" download>Download CV</a>   
+       <a class="btncv" href="not now" download>Contact me</a>   
+              
+            </div>
+            <!-- <img src="images/me.jpg" class="MEASDRAW"> -->
+      </div>
+        </div>
+      </section>
+              <section id="about" class="about">          
+         <!-- <p> COMPUTER SCIENCE GRADUATE ,CLASS OF 2024.WEB DEVELPOER AND INTERSTED IN LEARNING LANGUAGES<br>i speak four languages (italian,english,arabic,Spanish)</br></p> -->
+         <!-- COPIED FROM STACK OVERFLOW -->
+      
             </div>
           </div>
         </div>
@@ -81,6 +78,7 @@ I enjoy building complete web solutions that are both functional and user-friend
   <img src="images/js.png" alt="JavaScript" />
   <img src="images/figma.png" alt="FIGMA" />
     <img src="images/sql-server.png" alt="SQL" />
+     <img src="images/java.png" alt="java" />
 
 </div>
 
@@ -95,7 +93,7 @@ I enjoy building complete web solutions that are both functional and user-friend
         <img src="images/AFAQ.jpeg" alt="Project 1" />
         <h3>AFAQ UQU</h3>   
         <p>AN application that helps students obtain volunteer and training opportunities</p>
-        <div class="PR">
+        <div class="tech-stack">
           <span class="tag A">Flutter</span>
           <span class="tag G">DART</span>
           <span class="tag C">NOSQL</span>
@@ -114,7 +112,7 @@ Method (Edge Detection)</p>
       </div>
       <div class="project-card">
         <img src="images/proj3.webp" alt="Project3" />
-        <h3>LEARN HOW TO BR PROGRRAMER</h3>
+        <h3>LEARN HOW TO BE PROGRRAMER</h3>
         <p>WEBSITE TO LEARN PROGRRAMING languages</p>
         <div class="PR">
           <span class="tag G">HTML</span>
@@ -124,7 +122,39 @@ Method (Edge Detection)</p>
     </div>
   </div>
 </section>
+<section id="Contact">
+<div class="Contact-continer">
+  <div style="text-align: center;">
+    <h2>CONTACT ME </h2>
+    <p> Feel free to contact me</p>
+  <div class="row">
+    <div class="column">
+      <img src="images/jeddah.jpg" class='jed'style="width: 70%;">
+      <div class="column">
+        <form action="#">
+          <label for="fname">First Name </label>
+          <input type="text" name="fname" id="fname"
+          placeholder="Your name is ...">
+          <label for="lname">last Name </label>
+          <input type="text" name="lname" id="lname"
+          placeholder="Your last  name is ...">
+          <label for="country">Country </label>
+          <select name="country" id="country">
+            <option value="saudi">Saudi</option>
+            <option value="kwuit">Kwuit</option>
+            <option value="jordan">Jordan</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea name="subject" id="subject" placeholder="Write somthing..." style="height: 170px;"> </textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
 
+    </div>
+  </div>
+</div>
+</section>
 
 </body>
 </html>

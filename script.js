@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       item.classList.add("active");
       setHighlight(item);
     });
-//  im traying to make the logo move here "note for me"
+//  im traying to make the logo move here "note for"
     item.addEventListener("mouseenter", () => {
       if (!item.classList.contains("active")) {
         highlight.style.width = item.offsetWidth + "px";
