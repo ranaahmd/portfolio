@@ -17,7 +17,7 @@ html {
     height: 100vh;
     background-image: 
         linear-gradient(rgba(243, 243, 243, 0.3), rgba(243, 243, 243, 0.3)),
-        url("images/BACKGROUND.jpeg");
+        url("./images/BACKGROUND.jpeg");
     background-size: cover;
     background-position:cover;
     background-repeat: no-repeat;
