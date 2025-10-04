@@ -54,7 +54,6 @@ header .logo img {
   object-fit: cover;
 }
 
-
 header nav {
   display: flex;
   align-items: center;
@@ -104,7 +103,6 @@ header .extra-nav .social-icons .icon-img {
   object-fit: contain;
 }
 
-
 header .hamburger-menu {
   cursor: pointer;
   display: none;
@@ -127,7 +125,6 @@ header .mobile-nav {
   font-weight: 400;
   color: #fff;
 }
-
 
 .about {
   min-height: 100vh;
@@ -316,9 +313,9 @@ header .mobile-nav {
 
 .project .container .content .projects .card .description .action a {
   text-decoration: none;
+}
 
-
-}.contact .container .content .contact-form {
+.contact .container .content .contact-form {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -345,7 +342,8 @@ header .mobile-nav {
   color: #fff;
 }
 
-.contact .container .content .contact-form .input input:focus {
+.contact .container .content .contact-form .input input:focus,
+.contact .container .content .contact-form textarea:focus {
   outline: none;
 }
 
@@ -357,10 +355,6 @@ header .mobile-nav {
   border: 3px solid #fff;
   border-radius: 8px;
   color: #fff;
-}
-
-.contact .container .content .contact-form textarea:focus {
-  outline: none;
 }
 
 footer {
@@ -382,7 +376,6 @@ footer .container {
 footer .container .profile {
   display: flex;
   flex-direction: column;
-  /* gap: 8px; */
   width: 50%;
   height: 50%;
   border-radius: 50%;
@@ -414,7 +407,6 @@ footer .container .profile .logo img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-
 }
 
 footer .container .profile .logo a {
@@ -465,6 +457,7 @@ footer .container .link-container .navigation ul {
   flex-direction: column;
   gap: 8px;
 }
+
 footer .container .link-container .information ul li,
 footer .container .link-container .resource ul li,
 footer .container .link-container .navigation ul li {
@@ -618,6 +611,39 @@ footer .container .link-container .navigation ul li a {
   footer .container .link-container .navigation ul li::after {
     width: 60%;
   }
+
+  .about .about-me {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .about .profile,
+  .about .description {
+    width: 90%;
+    text-align: center;
+  }
+
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    gap: 16px;
+  }
+
+  .contact-form {
+    width: 95%;
+    padding: 16px;
+  }
+
+  .contact-form .input {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-form .input input,
+  .contact-form textarea {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -628,9 +654,11 @@ footer .container .link-container .navigation ul li a {
   footer .container {
     padding: 1rem 2rem;
   }
+
   footer .container .profile {
     width: 50%;
   }
+
   footer .container .link-container {
     flex-direction: column;
     width: 100%;
