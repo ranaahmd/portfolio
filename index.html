@@ -1,160 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Icon -->
+    <link rel="icon" href="assets/logo.png" />
 
-  <script defer src="./script.js"></script>
-
-</head>
-<body>
-  <nav class="main-nav">
-    <div class="container">
-      <div class="logo-box">
-        <img src="./images/me.jpg" alt="logo" class="logo-img" />
-      
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/ME AS DRAW.jpeg" alt="logo" />
       </div>
 
-      <div class="parent-link"> 
-        <ul class="navigation">
-          <div class='highlight'></div>
-          <li class="active"><a class="social-link" href="#home">Home</a></li>
-          <li><a class="social-link" href="#about">About</a></li>
-          <li><a class="social-link" href="#skills">Skills</a></li>
-          <li><a class="social-link" href="#project">Projects</a></li>
-          <li><a class="social-link" href="#contact">Contact</a></li>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skill">Skill</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="extra-nav">
+  <button id="contact-btn">Get In Touch</button>
+  <div class="social-icons" id="social-icons" style="display: none;">
+    <a href="https://github.com/ranaahmd" target="_blank">
+      <img src="./images/git.png" alt="GitHub Logo" class="icon-img" />
+    </a>
+    <a href="https://www.linkedin.com/in/rana-ahmed-864bb41b7" target="_blank">
+      <img src="./images/linkedin.png" alt="LinkedIn Logo" class="icon-img" />
+    </a>
+  </div>
+</div>
+
+
+      <div id="menu" class="hamburger-menu">
+        <svg
+          width="35px"
+          height="35px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 18L20 18"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 12L20 12"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 6L20 6"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div id="nav-mobile" class="mobile-nav">
+        <div id="close-mobile" class="close">
+          <svg
+            width="800px"
+            height="800px"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 2px;
+                }
+              </style>
+            </defs>
+
+            <title />
+
+            <g id="cross">
+              <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+
+              <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+            </g>
+          </svg>
+        </div>
+        <ul>
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skilll">Skilll</a></li>
+          <li><a class="nav-link" href="#project">Project</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
+    </header>
 
-      <div class="social-icons ">
-        <a href="https://github.com/ranaahmd" target="_blank">
-          <img src="./images/github.png" alt="GitHub Logo" class="icon-img" />
-        </a>
-        <a href="https://www.linkedin.com/in/rana-ahmed-864bb41b7" target="_blank">
-          <img src="./images/linkedin.png" alt="LinkedIn Logo" class="icon-img" />
-        </a>
-      </div>
+   <section class="hero">
+  <div class="container">
+    <div class="content">
+      <svg viewBox="0 0 1500 500" data-aos="fade-down">
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#ff7e5f; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#feb47b; stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <text x="50%" y="50%" text-anchor="middle" font-size="120" fill="url(#grad1)" font-family="Verdana, sans-serif">
+          RANA
+        </text>
+      </svg>
+      <h1 data-aos="zoom-in-up">
+        Hello! <span>Fun & Curious Dev</span>
+      </h1>
     </div>
-  </nav>
-
-  <section id="home" class="section">
-    <div class="container">
-        <div class="header-container">
-          <div class="hdr-containner-inner">
-            <div class="name-role">
-              <div class="role"></div>
-              <img src="./images/me.jpg" class="MEASDRAW">    
-             <h2 >Tech Enthusiast in Full Stack & Data</h2>
-          <h5>RANA AHMED ALHURTUMI</h5><div class="ME">
-            <div class ='butt'>
-       <a class="btncv" href="not now" download>Download CV</a>   
-       <a class="btncv" href="not now" download>Contact me</a>   
-              
-            </div>
-            <!-- <img src="images/me.jpg" class="MEASDRAW"> -->
+  </div>
+</section>
       </div>
-        </div>
-      </section>
-              <section id="about" class="about">          
-         <!-- <p> COMPUTER SCIENCE GRADUATE ,CLASS OF 2024.WEB DEVELPOER AND INTERSTED IN LEARNING LANGUAGES<br>i speak four languages (italian,english,arabic,Spanish)</br></p> -->
-         <!-- COPIED FROM STACK OVERFLOW -->
-      
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            About Me
+          </h1>
+          <div class="about-me">
+            <div data-aos="zoom-out-right" data-aos-delay="300" class="profile">
+              <div class="image-box">
+                <img src="images/profile.png" alt="profile" />
+              </div>
+            </div>
+
+            <div
+              data-aos="zoom-in-left"
+              data-aos-delay="300"
+              class="description"
+            >
+              <div class="name-role">
+                <h1>RANA</h1>
+                <div class="role">
+                  <h2>Full stack Developer</h2>
+                </div>
+              </div>
+              <p>
+                Hi! I’m Rana, a passionate web developer specializing in Full Stack Development. I love crafting custom, user-friendly, and visually appealing web applications that stand out. I am proficient in HTML, CSS, JavaScript, React, Node.js, and databases (SQL & NoSQL).
+
+In addition to my tech skills,
+<br> I speak three languages, which helps me communicate effectively and collaborate with diverse teams. </br>
+I thrive on learning new technologies, solving problems creatively, and building projects that make a real impact.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="skills">
-  <div class="skills-container">
-    <h2 class="skills-title">My Skills</h2>
+    <section id="skill" class="skill">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            Skill
+          </h1>
 
-<div class="skills-scroll">
-  <img src="./images/html.png" alt="HTML" />
-  <img src="./images/css.png" alt="CSS" />
-  <img src="./images/js.png" alt="JavaScript" />
-  <img src="./images/figma.png" alt="FIGMA" />
-    <img src="./images/sql-server.png" alt="SQL" />
-     <img src="./images/java.png" alt="java" />
-
-</div>
-
-<!-- PROJECT SECTION in both css,html COPIED FROM  Tiketok:eyyekss.it_x  -->
-  <section id="projects">
-  <div class="projects-container">
-    <h2 class="projects-title">My Projects</h2>
-
-    <div class="projects-scroll">
-    
-      <div class="project-card">
-        <img src="./images/AFAQ.jpeg" alt="Project 1" />
-        <h3>AFAQ UQU</h3>   
-        <p>AN application that helps students obtain volunteer and training opportunities</p>
-        <div class="tech-stack">
-          <span class="tag A">Flutter</span>
-          <span class="tag G">DART</span>
-          <span class="tag C">NOSQL</span>
+          <div class="skills" data-aos-delay="500">
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="images/html.png" alt="html" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="images/css.png" alt="css" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="images/js.png" alt="javascript" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="images/java.png" alt="java" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="images/sql-server.png" alt="SQL" />
+            </div>
         </div>
       </div>
-      <div class="project-card">
-        <img src="./images/google.png" alt="Project 2" />
-        <h3>Cancer Cell Segmentation Using opencv</h3>
+    </section>
+
+    <section id="project" class="project">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            Project
+          </h1>
+
+          <div class="projects">
+            <div data-aos="zoom-in-down" data-aos-delay="300" class="card">
+              <img src="images/AFAQ.jpeg" alt="project" />
+
+              <div class="description">
+                <h1>AFAQ</h1>
+                <p>
+                  AN application that helps students obtain volunteer and training opportunities
+                </p>
+                <div class="action">
+                  <button>Flutter</button>
+                  <button>Dart</button>
+                  <button>NOSQL</button>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
+              <img src="images/bank.jpg" alt="project" />
+
+              <div class="description">
+                <h1>BANKING SYSTEM</h1>
+                <p>
+                  a Banking System in Python.
+It lets you create accounts, deposit, withdraw, transfer money, and even handles overdraft protection. I also added some unit tests to make sure things run smoothly.
+                </p>
+                <div class="action">
+                <button>Python</button>
+                  <button>Csv</button>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in-down" data-aos-delay="500" class="card">
+              <img src="images/google.png" alt="project" />
+
+              <div class="description">
+                <h1>OpenCsv</h1>
+                <p>
+                  Cancer Cell Segmentation Using opencv</h3>
         <p>Write code that segments canser cells in medical images using Python and Open CV
-Method (Edge Detection)</p>
-        <div class="PR">
-          <span class="tag G">Python</span>
-          <span class="tag C">GoogleCoolab</span>
-          
+Method (Edge Detection)
+                </p>
+                <div class="action">
+                  <button>Python</button>
+                  <button>GoogleCollab</button>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            Contact
+          </h1>
+
+          <form
+            data-aos="zoom-in-down"
+            data-aos-delay="300"
+            class="contact-form"
+          >
+            <div class="input">
+              <input type="text" placeholder="Name..." />
+              <input type="email" placeholder="Email..." />
+              <input type="number" placeholder="Phone..." />
+              <input type="text" placeholder="Subject..." />
+            </div>
+            <textarea name="message" placeholder="Message..."></textarea>
+          </form>
         </div>
       </div>
-      <div class="project-card">
-        <img src="./images/proj3.webp" alt="Project3" />
-        <h3>LEARN HOW TO BE PROGRRAMER</h3>
-        <p>WEBSITE TO LEARN PROGRRAMING languages</p>
-        <div class="PR">
-          <span class="tag G">HTML</span>
-          <span class="tag C">CSS</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="Contact">
-<div class="Contact-continer">
-  <div style="text-align: center;">
-    <h2>CONTACT ME </h2>
-    <p> Feel free to contact me</p>
-  <div class="row">
-    <div class="column">
-      <img src="./images/jeddah.jpg" class='jed'style="width: 70%;">
-      <div class="column">
-        <form action="#">
-          <label for="fname">First Name </label>
-          <input type="text" name="fname" id="fname"
-          placeholder="Your name is ...">
-          <label for="lname">last Name </label>
-          <input type="text" name="lname" id="lname"
-          placeholder="Your last  name is ...">
-          <label for="country">Country </label>
-          <select name="country" id="country">
-            <option value="saudi">Saudi</option>
-            <option value="kwuit">Kwuit</option>
-            <option value="jordan">Jordan</option>
-            <option value="usa">USA</option>
-          </select>
-          <label for="subject">Subject</label>
-          <textarea name="subject" id="subject" placeholder="Write somthing..." style="height: 170px;"> </textarea>
-          <input type="submit" value="Submit">
-        </form>
-      </div>
+    </section>
 
-    </div>
-  </div>
-</div>
-</section>
+    <footer>
+      <div data-aos="fade-up" data-aos-duration="1000" class="container">
+        <div class="profile">
+          <div class="logo">
+            <img src="images/me.jpg" alt="logo" />
+            <a href="">Rana</a>
+          </div>
+          <p>
+           I am a web developer who loves creating interactive websites and learning new technologies.</p>
 
-</body>
+        <div class="link-container">
+          <div class="information">
+            <h1>Skill</h1>
+            <ul>
+              <li>
+                <a href="#">CSS</a>
+              </li>
+              <li>
+                <a href="#">javascript</a>
+              </li>
+              <li>
+                <a href="#">JAVA</a>
+              </li>
+              <li>
+                <a href="#">HTML</a>
+              </li>
+              <li>
+                <a href="#">Python</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="resource">
+            <h1>Technology</h1>
+            <ul>
+              <li>
+                <a href="#">Figma</a>
+              </li>
+              <li>
+                <a href="#">Github</a>
+              </li>
+              <li>
+                <a href="#">GIT</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Box Icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
