@@ -7,6 +7,22 @@ const icons = document.getElementById('social-icons');
 btn.addEventListener('click', () => {
   icons.style.display = icons.style.display === 'none' ? 'flex' : 'none';
   document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+<<<<<<< HEAD
+=======
+});
+menu.addEventListener("click", () => {
+  nav.classList.add("show");
+});
+
+closeButton.addEventListener("click", () => {
+  nav.classList.remove("show");
+});
+
+navLink.forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("show");
+  });
+>>>>>>> 72413664c506e0eeeb374f223b6b69d63a747313
 });
 menu.addEventListener("click", () => {
   nav.classList.add("show");
